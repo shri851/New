@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  body{
+    padding: 5px;
+  }
+  
+    input{
+      border: 1px solid #93949B;
+      background:white;
+      height:2.2em;
+   margin:5px;
+    }
+    .remove{
+      background:#9C0000;
+      color: white;
+      border: none;
+      width:6em;
+    
+      height: 2em;
+      margin-left:21.1em;
+      
+    }
+    .add{
+     position: relative;
+     top:6px;
+      background:#5EBD67;
+      color: white;
+      border: none;
+      width:6em;
+      height:2em;
+      
+    }
+    span{
+      display:flex;
+      flex-direction:row;
+    }
+   
+     .first{
+      position: relative;
+      left:5px;
+    
+    }
+    .second{
+      
+      position: relative;
+      top:-15px;
+      left:170px;
+    }
+ 
+  </style>
+</head>
+
+<body>
+
+ <h1> To do list</h1>
+<span>
+<input class="input" placeholder="enter a todo" type="text">
+<input  class="date" type="date">
+<button class="add"onclick="add()">Add</button>
+</span>
+
+
+<script src="to do list.js">
+  
+</script>
+</body>
+
+</html>
