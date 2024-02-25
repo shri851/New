@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+ 
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border:none;
+  background:#F5F5FA;
+ 
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:white;
+  margin-top:60px;
+
+}
+#calculator{
+
+  border-radius:5px;
+  width: 100%;
+  font-size: 20px;
+  height: 21em;
+}
+#display{
+  margin:10px;
+  width: 85%;
+
+  font-size:45px;
+}
+
+button{
+  width:45px;
+  height: 45px;
+  margin: 13px;
+  font-size:20px;
+
+}
+button:hover{
+  border-radius: 50%;
+  border:1px solid #39D5D4;
+}
+.btn-container{
+
+  display: flex;
+  justify-content: center;
+ flex-wrap:wrap;}
+ .first{
+   margin-left:60px;
+   position: relative;
+   left:-40px;
+   
+ }
+ .one{
+   color:#39D5D4;
+font-size: 30px;
+ }
+ .para{
+   text-align: center;
+   margin-bottom:100px;
+  
+ }
+ .hr{
+   position:fixed;
+   top:87px;
+   margin-left: 120px;
+   height:3px;
+   width:120px;
+   background-color:#39D5D4;
+ }
+ 
+  </style>
+</head>
+
+<body>
+  
+ <div id="calculator">
+   <p class="para">Calculator</p>
+   <hr class="hr">
+   <input id="display" type="text"
+   readonly>
+   
+ <div class="btn-container">
+   <div class="first">
+     <button class="one" onclick="val=''
+   cal()">C</button>
+   <button onclick="val=val+'1'
+   cal()">1</button>
+   <button onclick="val=val+'2'
+   cal()">2</button>
+   <button class="add one"onclick="val=val+'+'
+   cal()">+</button>
+ 
+   </div> 
+<div class="first">
+   <button onclick="val=val+'3'
+   cal()">3</button>
+   <button onclick="val=val+'4'
+   cal()">4</button>
+      <button onclick="val=val+'5'
+   cal()">5</button>
+   <button onclick="val=val+'-'
+   cal()" class="minus one">-</button>
+</div>
+    
+<div class="first">
+   <button onclick="val=val+'6'
+   cal()">6</button>   <button onclick="val=val+'7'
+   cal()">7</button>
+   <button onclick="val=val+'8'
+   cal()">8</button>
+   <button onclick="val=val+'*'
+   cal()" class="one">×</button></div
+   >
+   <div class="first">
+    <button onclick="val=val+'9'
+   cal()">9</button>
+
+   <button onclick="val=val+'10'
+   cal()">10</button>
+      <button onclick="val=val+'0'
+   cal()">0</button>
+   <button onclick="val=val+'/'
+   cal()" class="one">÷</button>
+ </div>
+<div class="first">
+   <button onclick="val=val+'.'
+   cal()">.</button>
+    <button onclick="
+   val=eval(val)
+   cal()"class="one"
+   >=</button>
+   </div>
+ </div>
+</div>
+ <script>
+   let val= ""
+   function cal(){
+   document.querySelector("#display").value=val
+   }
+ </script>
+</body>
+
+</html>
